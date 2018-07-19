@@ -1,0 +1,367 @@
+2016-07-12 14:48:24 ERROR  : ERROR:  update or delete on table "aquila_primitive" violates foreign key constraint "aquila_xy_point_primitive_i_fk" on table "aquila_xy_point"
+DETAIL:  Key (oid)=(789001) is still referenced from table "aquila_xy_point".
+2016-07-12 14:48:42 ERROR  : ERROR:  syntax error at or near "all"
+LINE 1: delete from  msterrain.aquila_primitive cascade all;
+                                                        ^
+2016-07-12 14:48:57 ERROR  : ERROR:  update or delete on table "aquila_primitive" violates foreign key constraint "aquila_xy_point_primitive_i_fk" on table "aquila_xy_point"
+DETAIL:  Key (oid)=(789001) is still referenced from table "aquila_xy_point".
+2016-07-12 14:49:32 ERROR  : ERROR:  relation "aquila_xy_point" does not exist
+LINE 1: delete from aquila_xy_point;
+                    ^
+2016-07-12 15:03:22 ERROR  : FATAL:  terminating connection due to administrator command
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-07-12 15:05:12 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "aquila_synchronized_machine" references "aquila_primitive".
+HINT:  Truncate table "aquila_synchronized_machine" at the same time, or use TRUNCATE ... CASCADE.
+2016-07-19 15:14:39 ERROR  : ERROR:  syntax error at or near "REATE"
+LINE 1: REATE TABLE msterrain.aquila_primitive_new
+        ^
+2016-07-19 15:14:55 ERROR  : ERROR:  relation "aquila_primitive_pk" already exists
+2016-07-19 15:15:31 ERROR  : ERROR:  relation "aquila_primitive_new" does not exist
+LINE 2: select * from aquila_primitive_new
+                      ^
+2016-07-19 15:17:22 ERROR  : ERROR:  COPY file signature not recognized
+2016-07-19 15:17:28 ERROR  : Copy failed!
+
+2016-07-19 15:17:42 ERROR  : ERROR:  table "aquila_primitive_new" does not have OIDs
+2016-07-19 15:17:45 ERROR  : no COPY in progress
+2016-07-19 15:17:46 ERROR  : Copy failed!
+
+2016-07-19 15:17:57 ERROR  : ERROR:  COPY file signature not recognized
+2016-07-19 15:17:58 ERROR  : Copy failed!
+
+2016-07-19 15:18:03 ERROR  : ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+CONTEXT:  COPY aquila_primitive_new, line 1
+2016-07-19 15:18:06 ERROR  : Copy failed!
+
+2016-07-19 15:18:18 ERROR  : ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+CONTEXT:  COPY aquila_primitive_new, line 1
+2016-07-19 15:18:20 ERROR  : Copy failed!
+
+2016-07-19 15:24:49 ERROR  : ERROR:  invalid input syntax for integer: "--"
+CONTEXT:  COPY aquila_primitive_new, line 1, column oid: "--"
+2016-07-19 15:24:57 ERROR  : Copy failed!
+
+2016-07-19 15:44:40 ERROR  : ERROR:  invalid input syntax for integer: "INSERT INTO aquila_primitive VALUES (901309, 77516, 'BOOTLEG', 2230373838);"
+CONTEXT:  COPY aquila_primitive, line 1, column oid: "INSERT INTO aquila_primitive VALUES (901309, 77516, 'BOOTLEG', 2230373838);"
+2016-07-19 15:46:57 ERROR  : Copy failed!
+
+2016-07-19 15:47:21 ERROR  : ERROR:  relation "aquila_primitive" does not exist
+LINE 1: INSERT INTO aquila_primitive VALUES (901309, 77516, 'BOOTLEG...
+                    ^
+2016-07-19 15:47:55 ERROR  : ERROR:  relation "aquila_primitive" does not exist
+LINE 1: INSERT INTO aquila_primitive VALUES (901309, 77516, 'BOOTLEG...
+                    ^
+2016-07-19 15:51:07 ERROR  : ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+CONTEXT:  COPY aquila_primitive, line 1
+2016-07-19 15:51:11 ERROR  : Copy failed!
+
+2016-07-19 15:51:16 ERROR  : ERROR:  COPY file signature not recognized
+2016-07-19 15:51:17 ERROR  : Copy failed!
+
+2016-07-19 15:55:57 ERROR  : ERROR:  invalid byte sequence for encoding "UTF8": 0x00
+CONTEXT:  COPY aquila_primitive, line 1
+2016-07-19 15:56:06 ERROR  : Copy failed!
+
+2016-07-19 16:00:25 ERROR  : ERROR:  relation "aquila_primitive_new" does not exist
+LINE 1: select count(*) from aquila_primitive_new
+                             ^
+2016-07-19 16:00:53 ERROR  : ERROR:  permission denied for relation aquila_primitive_new
+2016-07-19 16:01:06 ERROR  : ERROR:  permission denied for relation aquila_primitive_new
+2016-07-19 16:03:39 ERROR  : ERROR:  relation "aquila_primitive_new" already exists
+2016-07-20 15:41:32 ERROR  : ERROR:  out of memory
+DETAIL:  Failed on request of size 1048576.
+2016-07-21 09:50:44 ERROR  : ERROR:  relation "aquila_primitive_new" already exists
+2016-07-21 10:33:17 ERROR  : ERROR:  relation "aquila_primitive_new" does not exist
+LINE 1: INSERT INTO aquila_primitive_new VALUES (2719080, 544766, 'B...
+                    ^
+2016-07-21 12:17:21 ERROR  : ERROR:  column b.id does not exist
+LINE 4: WHERE A.oid = B.id 
+                      ^
+2016-07-21 12:25:56 ERROR  : ERROR:  syntax error at or near "commit"
+LINE 5: commit; 
+        ^
+2016-07-21 12:26:14 ERROR  : ERROR:  relation "msterrain.aquila_primtive_new" does not exist
+LINE 3: set ap.points_hash=(select apn.points_hash from msterrain.aq...
+                                                        ^
+2016-07-21 12:40:22 ERROR  : ERROR:  column "rownum" does not exist
+LINE 2:   FROM msterrain.aquila_primitive where rownum<=100;
+                                                ^
+2016-07-21 12:45:55 ERROR  : ERROR:  syntax error at or near "msterrain"
+LINE 1: select points_hash form msterrain.aquila_primitive where oid...
+                                ^
+2016-07-21 12:57:36 ERROR  : ERROR:  relation "aquila_primitive_new" does not exist
+LINE 1: INSERT INTO aquila_primitive_new VALUES (4610699, 1015552, '...
+                    ^
+2016-07-21 13:03:13 ERROR  : ERROR:  could not create unique index "order_details_pk"
+DETAIL:  Key (oid)=(4610699) is duplicated.
+2016-07-21 15:01:24 ERROR  : ERROR:  column "a" of relation "aquila_primitive" does not exist
+LINE 2: SET A.points_hash = B.points_hash
+            ^
+2016-07-27 18:16:38 ERROR  : ERROR:  relation "msterrain.authenicated_user" does not exist
+LINE 1: select * from msterrain.authenicated_user
+                      ^
+2016-07-28 10:38:59 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-07-28 10:39:06 ERROR  : Failed to re-establish the connection to the server postgres on postgres@localhost:5432
+2016-08-29 16:46:03 ERROR  : ERROR:  cannot drop schema msterrain because other objects depend on it
+DETAIL:  table msterrain.databasechangelog depends on schema msterrain
+table msterrain.databasechangeloglock depends on schema msterrain
+table msterrain.activity depends on schema msterrain
+table msterrain.activity_machinetypes depends on schema msterrain
+table msterrain.aqm_artifact_type depends on schema msterrain
+table msterrain.aqm_column_types depends on schema msterrain
+table msterrain.aquila_capability depends on schema msterrain
+table msterrain.aquila_hole depends on schema msterrain
+table msterrain.aquila_hole_old depends on schema msterrain
+table msterrain.aquila_primitive depends on schema msterrain
+table msterrain.aquila_site_settings depends on schema msterrain
+table msterrain.aquila_synchronized_machine depends on schema msterrain
+table msterrain.aquila_xy_point depends on schema msterrain
+table msterrain.authenticated_user depends on schema msterrain
+table msterrain.autonomy_capability depends on schema msterrain
+table msterrain.bounds_template depends on schema msterrain
+table msterrain.caes_capability depends on schema msterrain
+table msterrain.caes_group depends on schema msterrain
+table msterrain.caes_material_grade_color depends on schema msterrain
+table msterrain.caes_site_settings depends on schema msterrain
+table msterrain.category_machine depends on schema msterrain
+table msterrain.communication_url depends on schema msterrain
+table msterrain.consumable depends on schema msterrain
+table msterrain.consumable_actions depends on schema msterrain
+table msterrain.consumable_action_list depends on schema msterrain
+table msterrain.consumable_action_list_actions depends on schema msterrain
+table msterrain.consumable_model depends on schema msterrain
+table msterrain.consumable_suppliers depends on schema msterrain
+table msterrain.consumable_type depends on schema msterrain
+table msterrain.consumable_type_machinetypes depends on schema msterrain
+table msterrain.conversion_template depends on schema msterrain
+table msterrain.conversion_template_layer depends on schema msterrain
+table msterrain.delay_code depends on schema msterrain
+table msterrain.delay_code_group depends on schema msterrain
+table msterrain.delay_code_machinetypes depends on schema msterrain
+table msterrain.detect_dimension depends on schema msterrain
+table msterrain.drillinpit depends on schema msterrain
+table msterrain.drill_mission depends on schema msterrain
+table msterrain.drill_mission_progress depends on schema msterrain
+table msterrain.drill_mission_step depends on schema msterrain
+table msterrain.electric_power_capability depends on schema msterrain
+table msterrain.entity_id_gen depends on schema msterrain
+table msterrain.export_fields depends on schema msterrain
+table msterrain.export_parameters depends on schema msterrain
+table msterrain.ext_operator depends on schema msterrain
+table msterrain.file_audit depends on schema msterrain
+table msterrain.file_metadata depends on schema msterrain
+table msterrain.fluids depends on schema msterrain
+table msterrain.fluids_machinetypes depends on schema msterrain
+table msterrain.fuel_and_lube_type depends on schema msterrain
+table msterrain.gis_drill_machine_data depends on schema msterrain
+table msterrain.gis_file_data depends on schema msterrain
+table msterrain.gis_file_group_data depends on schema msterrain
+table msterrain.gis_filter depends on schema msterrain
+table msterrain.gis_layer_group depends on schema msterrain
+table msterrain.gis_layer_group_resources depends on schema msterrain
+table msterrain.gis_machine_data depends on schema msterrain
+table msterrain.gis_ongrade_data depends on schema msterrain
+table msterrain.gis_project_data depends on schema msterrain
+table msterrain.gis_resource depends on schema msterrain
+table msterrain.gis_site_monitor_data depends on schema msterrain
+table msterrain.go_to_location depends on schema msterrain
+table msterrain.gpsinpit depends on schema msterrain
+table msterrain.jobcode_machinetypes depends on schema msterrain
+table msterrain.job_code depends on schema msterrain
+table msterrain.job_code_group depends on schema msterrain
+table msterrain.machine depends on schema msterrain
+table msterrain.machineinpit depends on schema msterrain
+table msterrain.machine_category depends on schema msterrain
+table msterrain.machine_communication depends on schema msterrain
+table msterrain.machine_dimension_info depends on schema msterrain
+table msterrain.machine_model depends on schema msterrain
+table msterrain.machine_pit_info depends on schema msterrain
+table msterrain.material depends on schema msterrain
+table msterrain.message depends on schema msterrain
+table msterrain.message_machinetypes depends on schema msterrain
+table msterrain.operationinpit depends on schema msterrain
+table msterrain.operator depends on schema msterrain
+table msterrain.operator_group depends on schema msterrain
+table msterrain.operator_machinetypes depends on schema msterrain
+table msterrain.person depends on schema msterrain
+table msterrain.positioninpit depends on schema msterrain
+table msterrain.project depends on schema msterrain
+table msterrain.project_bounds_points depends on schema msterrain
+table msterrain.project_files depends on schema msterrain
+table msterrain.project_machinetypes depends on schema msterrain
+table msterrain.project_transfer_metadata depends on schema msterrain
+table msterrain.qrtz_blob_triggers depends on schema msterrain
+table msterrain.qrtz_calendars depends on schema msterrain
+table msterrain.qrtz_cron_triggers depends on schema msterrain
+table msterrain.qrtz_fired_triggers depends on schema msterrain
+table msterrain.qrtz_job_details depends on schema msterrain
+table msterrain.qrtz_job_listeners depends on schema msterrain
+table msterrain.qrtz_locks depends on schema msterrain
+table msterrain.qrtz_paused_trigger_grps depends on schema msterrain
+table msterrain.qrtz_scheduler_state depends on schema msterrain
+table msterrain.qrtz_simple_triggers depends on schema msterrain
+table msterrain.qrtz_triggers depends on schema msterrain
+table msterrain.qrtz_trigger_listeners depends on schema msterrain
+table msterrain.refuelable_capability depends on schema msterrain
+and 16 other objects (see server log for list)
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2016-08-29 20:32:56 ERROR  : ERROR:  database "postgis" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+2016-09-01 10:56:04 ERROR  : ERROR:  schema name cannot be qualified
+2016-09-29 10:04:14 ERROR  : ERROR:  schema "msterrain" does not exist
+2016-09-30 10:13:30 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 1: select * from msterrain.aquila_hole where hole_name=2047
+                                                           ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-09-30 10:19:40 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 1: select * from msterrain.aquila_hole where hole_name=2058
+                                                           ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2016-09-30 10:31:27 ERROR  : ERROR:  syntax error at or near "boolean"
+LINE 1: ...ere pattern_name like '440-2300-01' and redrilled boolean='t...
+                                                             ^
+2016-10-05 11:16:31 ERROR  : ERROR:  permission denied to create extension "pg_stat_statements"
+HINT:  Must be superuser to create this extension.
+2016-10-05 11:22:16 ERROR  : ERROR:  permission denied to create extension "pg_stat_statements"
+HINT:  Must be superuser to create this extension.
+2016-10-05 11:29:52 ERROR  : ERROR:  no schema has been selected to create in
+2016-10-05 11:38:05 ERROR  : ERROR:  syntax error at or near "vaccum"
+LINE 1: vaccum
+        ^
+2016-10-05 14:02:24 ERROR  : ERROR:  extension "pg_stat_statements" already exists
+2016-10-06 15:33:26 ERROR  : ERROR:  relation "msterrain.aquila_old" does not exist
+LINE 1: select * from msterrain.aquila_old
+                      ^
+2016-10-13 12:13:23 ERROR  : ERROR:  schema "msterrain" does not exist
+2016-11-14 17:42:11 ERROR  : ERROR:  relation "msterrain.aquila_hol" does not exist
+LINE 1: select count(*) from msterrain.aquila_hol
+                             ^
+2016-12-07 10:11:05 ERROR  : ERROR:  schema "msterrain" does not exist
+2016-12-07 10:11:31 ERROR  : ERROR:  schema "msterrain" does not exist
+2016-12-07 11:51:10 ERROR  : ERROR:  operator does not exist: character varying = integer
+LINE 1: select * from msterrain.aquila_hole where hole_name=236
+                                                           ^
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2017-01-19 12:36:05 ERROR  : Error connecting to the server: could not translate host name "pg" to address: Unknown server error
+
+2017-04-11 22:29:39 ERROR  : ERROR:  cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "aquila_synchronized_machine" references "aquila_primitive".
+HINT:  Truncate table "aquila_synchronized_machine" at the same time, or use TRUNCATE ... CASCADE.
+2017-08-09 13:36:15 ERROR  : ERROR:  schema "msterrain" does not exist
+2017-08-09 13:50:01 ERROR  : ERROR:  schema "msterrain" does not exist
+2017-08-09 13:50:33 ERROR  : ERROR:  schema "msterrain" does not exist
+2017-08-09 14:03:41 ERROR  : ERROR:  cannot drop schema msterrain because other objects depend on it
+DETAIL:  table msterrain.activity depends on schema msterrain
+table msterrain.activity_machinetypes depends on schema msterrain
+table msterrain.aqm_artifact_type depends on schema msterrain
+table msterrain.aqm_column_types depends on schema msterrain
+table msterrain.aquila_capability depends on schema msterrain
+table msterrain.aquila_hole depends on schema msterrain
+table msterrain.aquila_hole_old depends on schema msterrain
+table msterrain.aquila_primitive depends on schema msterrain
+table msterrain.aquila_site_settings depends on schema msterrain
+table msterrain.aquila_synchronized_machine depends on schema msterrain
+table msterrain.aquila_xy_point depends on schema msterrain
+table msterrain.authenticated_user depends on schema msterrain
+table msterrain.autonomy_capability depends on schema msterrain
+table msterrain.bounds_template depends on schema msterrain
+table msterrain.caes_capability depends on schema msterrain
+table msterrain.caes_group depends on schema msterrain
+table msterrain.caes_material_grade_color depends on schema msterrain
+table msterrain.caes_site_settings depends on schema msterrain
+table msterrain.category_machine depends on schema msterrain
+table msterrain.communication_url depends on schema msterrain
+table msterrain.consumable depends on schema msterrain
+table msterrain.consumable_action_list depends on schema msterrain
+table msterrain.consumable_action_list_actions depends on schema msterrain
+table msterrain.consumable_actions depends on schema msterrain
+table msterrain.consumable_drill_details depends on schema msterrain
+table msterrain.consumable_model depends on schema msterrain
+table msterrain.consumable_suppliers depends on schema msterrain
+table msterrain.consumable_type depends on schema msterrain
+table msterrain.consumable_type_machinetypes depends on schema msterrain
+table msterrain.conversion_template depends on schema msterrain
+table msterrain.conversion_template_layer depends on schema msterrain
+table msterrain.databasechangelog depends on schema msterrain
+table msterrain.databasechangeloglock depends on schema msterrain
+table msterrain.delay_code depends on schema msterrain
+table msterrain.delay_code_group depends on schema msterrain
+table msterrain.delay_code_machinetypes depends on schema msterrain
+table msterrain.detect_dimension depends on schema msterrain
+table msterrain.drill_lane depends on schema msterrain
+table msterrain.drill_mission depends on schema msterrain
+table msterrain.drill_mission_progress depends on schema msterrain
+table msterrain.drill_mission_step depends on schema msterrain
+table msterrain.drill_path_point depends on schema msterrain
+table msterrain.drill_work_area depends on schema msterrain
+table msterrain.drill_work_area_design_hole depends on schema msterrain
+table msterrain.drill_work_area_orphan_hole depends on schema msterrain
+table msterrain.drillinpit depends on schema msterrain
+table msterrain.electric_power_capability depends on schema msterrain
+table msterrain.entity_id_gen depends on schema msterrain
+table msterrain.export_fields depends on schema msterrain
+table msterrain.export_parameters depends on schema msterrain
+table msterrain.ext_operator depends on schema msterrain
+table msterrain.file_audit depends on schema msterrain
+table msterrain.file_metadata depends on schema msterrain
+table msterrain.fluids depends on schema msterrain
+table msterrain.fluids_machinetypes depends on schema msterrain
+table msterrain.fuel_and_lube_type depends on schema msterrain
+table msterrain.gis_drill_machine_data depends on schema msterrain
+table msterrain.gis_file_data depends on schema msterrain
+table msterrain.gis_file_group_data depends on schema msterrain
+table msterrain.gis_filter depends on schema msterrain
+table msterrain.gis_layer_group depends on schema msterrain
+table msterrain.gis_layer_group_resources depends on schema msterrain
+table msterrain.gis_machine_data depends on schema msterrain
+table msterrain.gis_ongrade_data depends on schema msterrain
+table msterrain.gis_project_data depends on schema msterrain
+table msterrain.gis_resource depends on schema msterrain
+table msterrain.gis_site_monitor_data depends on schema msterrain
+table msterrain.go_to_location depends on schema msterrain
+table msterrain.gpsinpit depends on schema msterrain
+sequence msterrain.hole_sequence depends on schema msterrain
+table msterrain.job_code depends on schema msterrain
+table msterrain.job_code_group depends on schema msterrain
+table msterrain.jobcode_machinetypes depends on schema msterrain
+table msterrain.machine depends on schema msterrain
+table msterrain.machine_category depends on schema msterrain
+table msterrain.machine_communication depends on schema msterrain
+table msterrain.machine_dimension_info depends on schema msterrain
+table msterrain.machine_firmware_version depends on schema msterrain
+table msterrain.machine_model depends on schema msterrain
+table msterrain.machine_pit_info depends on schema msterrain
+table msterrain.machineinpit depends on schema msterrain
+table msterrain.material depends on schema msterrain
+table msterrain.message depends on schema msterrain
+table msterrain.message_machinetypes depends on schema msterrain
+sequence msterrain.mstar_oid depends on schema msterrain
+table msterrain.operationinpit depends on schema msterrain
+table msterrain.operator depends on schema msterrain
+table msterrain.operator_group depends on schema msterrain
+table msterrain.operator_machinetypes depends on schema msterrain
+table msterrain.person depends on schema msterrain
+table msterrain.positioninpit depends on schema msterrain
+sequence msterrain.primitive_sequence depends on schema msterrain
+table msterrain.project depends on schema msterrain
+table msterrain.project_bounds_points depends on schema msterrain
+table msterrain.project_files depends on schema msterrain
+table msterrain.project_machinetypes depends on schema msterrain
+table msterrain.project_transfer_metadata depends on schema msterrain
+table msterrain.qrtz_blob_triggers depends on schema msterrain
+table msterrain.qrtz_calendars depends on schema msterrain
+table msterrain.qrtz_cron_triggers depends on schema msterrain
+and 17 other objects (see server log for list)
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-08-09 14:03:53 ERROR  : ERROR:  schema "msterrain" does not exist
+2017-09-21 11:07:37 ERROR  : ERROR:  relation "aquila_hole" does not exist
+LINE 1: select * from aquila_hole where hole_name like '093'
+                      ^
+2017-09-21 11:07:55 ERROR  : ERROR:  relation "mstterrain.aquila_hole" does not exist
+LINE 1: select * from mstterrain.aquila_hole where hole_name like '0...
+                      ^
